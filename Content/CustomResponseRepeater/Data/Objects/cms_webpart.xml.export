@@ -1,0 +1,64 @@
+﻿<cms_webpart version="8.2">
+  <NewDataSet>
+    <cms_webpart>
+      <WebPartID>1595</WebPartID>
+      <WebPartName>CustomResponseRepeater</WebPartName>
+      <WebPartDisplayName>Custom response repeater</WebPartDisplayName>
+      <WebPartDescription></WebPartDescription>
+      <WebPartFileName>Viewers/Basic/CustomResponseRepeater.ascx</WebPartFileName>
+      <WebPartProperties>&lt;form version="2"&gt;&lt;category name="Content"&gt;&lt;properties&gt;&lt;visible&gt;True&lt;/visible&gt;&lt;/properties&gt;&lt;/category&gt;&lt;field column="PageType" visible="true" columntype="text" allowempty="true" columnsize="200" publicfield="false" guid="49d54d02-69c2-46c5-bf27-031ecef5b101" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Page type&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;ReturnColumnName&gt;ClassName&lt;/ReturnColumnName&gt;&lt;HideWireframe&gt;False&lt;/HideWireframe&gt;&lt;SelectionMode&gt;0&lt;/SelectionMode&gt;&lt;SiteID&gt;0&lt;/SiteID&gt;&lt;ShowOnlyCoupled&gt;False&lt;/ShowOnlyCoupled&gt;&lt;AllowEmpty&gt;True&lt;/AllowEmpty&gt;&lt;HideInheritedClasses&gt;False&lt;/HideInheritedClasses&gt;&lt;controlname&gt;selectclassnames&lt;/controlname&gt;&lt;AllowAll&gt;False&lt;/AllowAll&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="Path" visible="true" columntype="text" allowempty="true" columnsize="450" publicfield="false" guid="9b38c2df-f3ca-47f2-992a-06d883e654eb" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Path&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;SinglePathMode&gt;False&lt;/SinglePathMode&gt;&lt;controlname&gt;selectpath&lt;/controlname&gt;&lt;AllowSetPermissions&gt;False&lt;/AllowSetPermissions&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="Transformation" visible="true" columntype="text" columnsize="200" publicfield="false" guid="f815f848-3a84-402e-956f-fed36fde2586" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Transformation&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;controlname&gt;selecttransformation&lt;/controlname&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="NestingLevel" visible="true" columntype="integer" allowempty="true" publicfield="false" guid="4c7e6c9e-fa62-4934-aa8a-6eecabb6ce67" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Maximum nesting level&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="TopN" visible="true" columntype="text" allowempty="true" columnsize="200" publicfield="false" guid="495db96e-6085-4e61-bad2-688a94ec5df4" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Top N&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="Columns" visible="true" columntype="text" allowempty="true" columnsize="1000" publicfield="false" guid="190f9dfc-a2d8-48ce-b220-aa076da76190" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Columns&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="Where" visible="true" columntype="text" allowempty="true" columnsize="1000" publicfield="false" guid="7bd48ab2-d496-4dbb-83d2-b370be46bd26" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Where condition&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="OrderBy" visible="true" columntype="text" allowempty="true" columnsize="200" publicfield="false" guid="19eff494-834e-4afd-8584-ea920bb247df" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Order by&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;/settings&gt;&lt;/field&gt;&lt;category name="DataSource"&gt;&lt;properties&gt;&lt;caption&gt;Data source&lt;/caption&gt;&lt;visible&gt;True&lt;/visible&gt;&lt;/properties&gt;&lt;/category&gt;&lt;field column="DataSourceName" visible="true" columntype="text" allowempty="true" columnsize="200" publicfield="false" guid="2d3a0e58-ae0b-4caa-b56a-ae0ea69383ef" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Data source name&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;/settings&gt;&lt;/field&gt;&lt;category name="Response"&gt;&lt;properties&gt;&lt;visible&gt;True&lt;/visible&gt;&lt;/properties&gt;&lt;/category&gt;&lt;field column="ContentType" visible="true" columntype="text" columnsize="200" publicfield="false" guid="d7af9b0e-29cf-45b5-b3aa-a8ddc39f94f2" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;defaultvalue&gt;text/plain&lt;/defaultvalue&gt;&lt;fieldcaption&gt;Content type&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="CharsEncoding" visible="true" columntype="text" allowempty="true" columnsize="200" publicfield="false" guid="014ab618-ff58-4fe7-8482-f2958a999146" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;defaultvalue&gt;utf8&lt;/defaultvalue&gt;&lt;fieldcaption&gt;Encoding&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;DisplayActualValueAsItem&gt;False&lt;/DisplayActualValueAsItem&gt;&lt;controlname&gt;DropDownListControl&lt;/controlname&gt;&lt;SortItems&gt;False&lt;/SortItems&gt;&lt;EditText&gt;False&lt;/EditText&gt;&lt;Options&gt;default;Default
+ascii;ASCII
+unicode;Unicode
+bigendianunicode;Big Endian Unicode
+utf7;UTF7
+utf8;UTF8
+utf32;UTF32&lt;/Options&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="StatusCode" visible="true" columntype="integer" publicfield="false" guid="251fed94-179e-49d2-a3f4-031ba65d1c2b" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;defaultvalue&gt;200&lt;/defaultvalue&gt;&lt;fieldcaption&gt;Status code&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="ContentDisposition" visible="true" columntype="text" allowempty="true" columnsize="50" publicfield="false" guid="5bf88871-5933-4ac4-9535-6308059ff8d4" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;defaultvalue&gt;inline&lt;/defaultvalue&gt;&lt;fieldcaption&gt;Content disposition&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;RepeatDirection&gt;horizontal&lt;/RepeatDirection&gt;&lt;controlname&gt;RadioButtonsControl&lt;/controlname&gt;&lt;RepeatLayout&gt;Flow&lt;/RepeatLayout&gt;&lt;Options&gt;inline;Inline
+attachment;Attachment&lt;/Options&gt;&lt;/settings&gt;&lt;/field&gt;&lt;/form&gt;</WebPartProperties>
+      <WebPartCategoryID>342</WebPartCategoryID>
+      <WebPartGUID>af2cf872-e9d7-4fae-b87e-fa900c9153e2</WebPartGUID>
+      <WebPartLastModified>2015-07-11T11:10:00+02:00</WebPartLastModified>
+      <WebPartType>0</WebPartType>
+      <WebPartLoadGeneration>0</WebPartLoadGeneration>
+      <WebPartLastSelection>2015-07-11T09:19:11+02:00</WebPartLastSelection>
+      <WebPartDefaultValues>&lt;form&gt;&lt;/form&gt;</WebPartDefaultValues>
+      <WebPartDefaultConfiguration>&lt;page&gt;&lt;/page&gt;</WebPartDefaultConfiguration>
+    </cms_webpart>
+    <cms_webpartcategory>
+      <CategoryID>249</CategoryID>
+      <CategoryDisplayName>All web parts</CategoryDisplayName>
+      <CategoryName>/</CategoryName>
+      <CategoryGUID>d782b5c3-27f3-45e6-a5cc-86c1944e2c8d</CategoryGUID>
+      <CategoryLastModified>2009-10-23T15:21:21+02:00</CategoryLastModified>
+      <CategoryImagePath></CategoryImagePath>
+      <CategoryPath>/</CategoryPath>
+      <CategoryLevel>0</CategoryLevel>
+      <CategoryChildCount>53</CategoryChildCount>
+      <CategoryWebPartChildCount>0</CategoryWebPartChildCount>
+    </cms_webpartcategory>
+    <cms_webpartcategory>
+      <CategoryID>167</CategoryID>
+      <CategoryDisplayName>Listings and viewers</CategoryDisplayName>
+      <CategoryParentID>249</CategoryParentID>
+      <CategoryName>ListingsAndViewers</CategoryName>
+      <CategoryGUID>25ea0b9d-7959-4566-b760-adddfbb8c159</CategoryGUID>
+      <CategoryLastModified>2008-04-09T07:43:51+02:00</CategoryLastModified>
+      <CategoryPath>/ListingsAndViewers</CategoryPath>
+      <CategoryLevel>1</CategoryLevel>
+      <CategoryChildCount>5</CategoryChildCount>
+      <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+    </cms_webpartcategory>
+    <cms_webpartcategory>
+      <CategoryID>342</CategoryID>
+      <CategoryDisplayName>Basic</CategoryDisplayName>
+      <CategoryParentID>167</CategoryParentID>
+      <CategoryName>BasicViewers</CategoryName>
+      <CategoryGUID>9b923a8b-b0c6-48f7-8cad-877830a05b72</CategoryGUID>
+      <CategoryLastModified>2010-08-13T16:10:45.59+02:00</CategoryLastModified>
+      <CategoryImagePath></CategoryImagePath>
+      <CategoryPath>/ListingsAndViewers/BasicViewers</CategoryPath>
+      <CategoryLevel>2</CategoryLevel>
+      <CategoryChildCount>0</CategoryChildCount>
+      <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+    </cms_webpartcategory>
+  </NewDataSet>
+</cms_webpart>

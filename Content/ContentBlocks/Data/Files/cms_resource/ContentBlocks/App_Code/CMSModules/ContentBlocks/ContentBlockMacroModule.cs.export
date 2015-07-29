@@ -1,0 +1,27 @@
+using System;
+
+using CMS.OutputFilter;
+using CMS.Base;
+
+
+/// <summary>
+/// ContentBlock module class. Partial class ensures correct registration. For adding new methods, modify ContentBlock inner class.
+/// </summary>
+[ContentBlockMacroLoader]
+public partial class CMSModuleLoader
+{
+    /// <summary>
+    /// Attribute class ensuring correct initialization of custom macro methods.
+    /// </summary>
+    private class ContentBlockMacroLoader : CMSLoaderAttribute
+    {
+        /// <summary>
+        /// Registers module methods.
+        /// </summary>
+        public override void Init()
+        {
+            // -- ContentBlock string macro methods
+            Extend<string>.With<ContentBlockMacroMethods>();
+        }
+    }
+}

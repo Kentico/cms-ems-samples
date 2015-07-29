@@ -1,0 +1,144 @@
+using System;
+using System.Data;
+
+using CMS.Base;
+using CMS.DataEngine;
+using CMS.Helpers;
+
+namespace ContentBlocks
+{    
+    /// <summary>
+    /// Class providing ContentBlockInfo management.
+    /// </summary>
+    public class ContentBlockInfoProvider : AbstractInfoProvider<ContentBlockInfo, ContentBlockInfoProvider>
+    {
+        #region "Constructors"
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public ContentBlockInfoProvider()
+            : base(ContentBlockInfo.TYPEINFO)
+        {
+        }
+
+        #endregion
+
+
+        #region "Public methods - Basic"
+
+        /// <summary>
+        /// Returns a query for all the ContentBlockInfo objects.
+        /// </summary>
+        public static ObjectQuery<ContentBlockInfo> GetContentBlocks()
+        {
+            return ProviderObject.GetContentBlocksInternal();
+        }
+
+
+        /// <summary>
+        /// Returns ContentBlockInfo with specified ID.
+        /// </summary>
+        /// <param name="id">ContentBlockInfo ID</param>
+        public static ContentBlockInfo GetContentBlockInfo(int id)
+        {
+            return ProviderObject.GetContentBlockInfoInternal(id);
+        }
+
+
+        /// <summary>
+        /// Returns ContentBlockInfo with specified name.
+        /// </summary>
+        /// <param name="name">ContentBlockInfo name</param>
+        public static ContentBlockInfo GetContentBlockInfo(string name)
+        {
+            return ProviderObject.GetContentBlockInfoInternal(name);
+        }
+
+
+        /// <summary>
+        /// Sets (updates or inserts) specified ContentBlockInfo.
+        /// </summary>
+        /// <param name="infoObj">ContentBlockInfo to be set</param>
+        public static void SetContentBlockInfo(ContentBlockInfo infoObj)
+        {
+            ProviderObject.SetContentBlockInfoInternal(infoObj);
+        }
+
+
+        /// <summary>
+        /// Deletes specified ContentBlockInfo.
+        /// </summary>
+        /// <param name="infoObj">ContentBlockInfo to be deleted</param>
+        public static void DeleteContentBlockInfo(ContentBlockInfo infoObj)
+        {
+            ProviderObject.DeleteContentBlockInfoInternal(infoObj);
+        }
+
+
+        /// <summary>
+        /// Deletes ContentBlockInfo with specified ID.
+        /// </summary>
+        /// <param name="id">ContentBlockInfo ID</param>
+        public static void DeleteContentBlockInfo(int id)
+        {
+            ContentBlockInfo infoObj = GetContentBlockInfo(id);
+            DeleteContentBlockInfo(infoObj);
+        }
+
+        #endregion
+
+
+        #region "Internal methods - Basic"
+	
+        /// <summary>
+        /// Returns a query for all the ContentBlockInfo objects.
+        /// </summary>
+        protected virtual ObjectQuery<ContentBlockInfo> GetContentBlocksInternal()
+        {
+            return GetObjectQuery();
+        }    
+
+
+        /// <summary>
+        /// Returns ContentBlockInfo with specified ID.
+        /// </summary>
+        /// <param name="id">ContentBlockInfo ID</param>        
+        protected virtual ContentBlockInfo GetContentBlockInfoInternal(int id)
+        {	
+            return GetInfoById(id);
+        }
+
+
+        /// <summary>
+        /// Returns ContentBlockInfo with specified name.
+        /// </summary>
+        /// <param name="name">ContentBlockInfo name</param>        
+        protected virtual ContentBlockInfo GetContentBlockInfoInternal(string name)
+        {
+            return GetInfoByCodeName(name);
+        } 
+
+
+        /// <summary>
+        /// Sets (updates or inserts) specified ContentBlockInfo.
+        /// </summary>
+        /// <param name="infoObj">ContentBlockInfo to be set</param>        
+        protected virtual void SetContentBlockInfoInternal(ContentBlockInfo infoObj)
+        {
+            SetInfo(infoObj);
+        }
+
+
+        /// <summary>
+        /// Deletes specified ContentBlockInfo.
+        /// </summary>
+        /// <param name="infoObj">ContentBlockInfo to be deleted</param>        
+        protected virtual void DeleteContentBlockInfoInternal(ContentBlockInfo infoObj)
+        {
+            DeleteInfo(infoObj);
+        }	
+
+        #endregion
+    }
+}

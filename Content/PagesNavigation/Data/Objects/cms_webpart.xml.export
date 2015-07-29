@@ -1,0 +1,59 @@
+﻿<cms_webpart version="8.2">
+  <NewDataSet>
+    <cms_webpart>
+      <WebPartID>1593</WebPartID>
+      <WebPartName>PagesNavigation</WebPartName>
+      <WebPartDisplayName>Pages navigation</WebPartDisplayName>
+      <WebPartDescription>Adds Previous and Next links to let your visitors navigate through your pages easily.</WebPartDescription>
+      <WebPartFileName>Viewers/Documents/PagesNavigation.ascx</WebPartFileName>
+      <WebPartProperties>&lt;form version="2"&gt;&lt;field column="PageType" visible="true" columntype="text" allowempty="true" columnsize="200" publicfield="false" guid="49d54d02-69c2-46c5-bf27-031ecef5b101" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Page type&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;ReturnColumnName&gt;ClassName&lt;/ReturnColumnName&gt;&lt;HideWireframe&gt;False&lt;/HideWireframe&gt;&lt;SelectionMode&gt;0&lt;/SelectionMode&gt;&lt;SiteID&gt;0&lt;/SiteID&gt;&lt;ShowOnlyCoupled&gt;False&lt;/ShowOnlyCoupled&gt;&lt;AllowEmpty&gt;True&lt;/AllowEmpty&gt;&lt;HideInheritedClasses&gt;False&lt;/HideInheritedClasses&gt;&lt;controlname&gt;selectclassnames&lt;/controlname&gt;&lt;AllowAll&gt;False&lt;/AllowAll&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="Path" visible="true" columntype="text" allowempty="true" columnsize="450" publicfield="false" guid="9b38c2df-f3ca-47f2-992a-06d883e654eb" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Path&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;SinglePathMode&gt;False&lt;/SinglePathMode&gt;&lt;controlname&gt;selectpath&lt;/controlname&gt;&lt;AllowSetPermissions&gt;False&lt;/AllowSetPermissions&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="NestingLevel" visible="true" columntype="integer" allowempty="true" publicfield="false" guid="4c7e6c9e-fa62-4934-aa8a-6eecabb6ce67" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Maximum nesting level&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="TopN" visible="true" columntype="text" allowempty="true" columnsize="200" publicfield="false" guid="495db96e-6085-4e61-bad2-688a94ec5df4" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Top N&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="Where" visible="true" columntype="text" allowempty="true" columnsize="1000" publicfield="false" guid="7bd48ab2-d496-4dbb-83d2-b370be46bd26" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Where condition&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="OrderBy" visible="true" columntype="text" allowempty="true" columnsize="200" publicfield="false" guid="19eff494-834e-4afd-8584-ea920bb247df" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Order by&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;/settings&gt;&lt;/field&gt;&lt;category name="Links"&gt;&lt;properties&gt;&lt;visible&gt;True&lt;/visible&gt;&lt;/properties&gt;&lt;/category&gt;&lt;field column="PreviousLinkCode" visible="true" columntype="text" allowempty="true" columnsize="1000" publicfield="false" guid="eaad1763-2d61-4aa4-b8a5-8aa52b150364" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fielddescription&gt;Either a text or a HTML code&lt;/fielddescription&gt;&lt;defaultvalue&gt;Previous&lt;/defaultvalue&gt;&lt;fieldcaption&gt;Previous link code&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="NextLinkCode" visible="true" columntype="text" allowempty="true" columnsize="1000" publicfield="false" guid="1e905633-57b6-423d-8e55-dd7be9c5dfd8" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fielddescription&gt;Either a text or a HTML code&lt;/fielddescription&gt;&lt;defaultvalue&gt;Next&lt;/defaultvalue&gt;&lt;fieldcaption&gt;Next link code&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="ShowNames" visible="true" columntype="boolean" allowempty="true" publicfield="false" guid="4f8cae64-057d-4a22-b68d-ef965dc30800" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fielddescription&gt;Shows names of pages instead of Next/Previous links&lt;/fielddescription&gt;&lt;defaultvalue&gt;false&lt;/defaultvalue&gt;&lt;fieldcaption&gt;Show names of pages in links&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;controlname&gt;CheckBoxControl&lt;/controlname&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="RenderLinks" visible="true" columntype="text" allowempty="true" columnsize="10" publicfield="false" guid="daeb0725-cc8c-4f80-855a-73724ffbb996" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;defaultvalue&gt;both&lt;/defaultvalue&gt;&lt;fieldcaption&gt;Render links&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;RepeatDirection&gt;horizontal&lt;/RepeatDirection&gt;&lt;controlname&gt;RadioButtonsControl&lt;/controlname&gt;&lt;RepeatLayout&gt;Flow&lt;/RepeatLayout&gt;&lt;Options&gt;both;Both
+prev;Previous
+next;Next&lt;/Options&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="PreviousLinkCSS" visible="true" columntype="text" allowempty="true" columnsize="100" publicfield="false" guid="25c7365b-c1f4-4c35-8686-45699b4426ba" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Previous link CSS class&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="NextLinkCSS" visible="true" columntype="text" allowempty="true" columnsize="100" publicfield="false" guid="10a6fa32-1fdd-4b43-a2f9-b3651afed09f" reftype="Required" resolvedefaultvalue="False"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Next link CSS class&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;/settings&gt;&lt;/field&gt;&lt;/form&gt;</WebPartProperties>
+      <WebPartCategoryID>341</WebPartCategoryID>
+      <WebPartGUID>95b5daa4-3ba5-4b20-98c5-9d7f24773d02</WebPartGUID>
+      <WebPartLastModified>2015-06-22T13:02:52+02:00</WebPartLastModified>
+      <WebPartType>0</WebPartType>
+      <WebPartLoadGeneration>0</WebPartLoadGeneration>
+      <WebPartLastSelection>2015-06-22T11:50:14+02:00</WebPartLastSelection>
+      <WebPartDefaultValues>&lt;form&gt;&lt;/form&gt;</WebPartDefaultValues>
+      <WebPartSkipInsertProperties>false</WebPartSkipInsertProperties>
+      <WebPartDefaultConfiguration>&lt;page&gt;&lt;/page&gt;</WebPartDefaultConfiguration>
+    </cms_webpart>
+    <cms_webpartcategory>
+      <CategoryID>249</CategoryID>
+      <CategoryDisplayName>All web parts</CategoryDisplayName>
+      <CategoryName>/</CategoryName>
+      <CategoryGUID>d782b5c3-27f3-45e6-a5cc-86c1944e2c8d</CategoryGUID>
+      <CategoryLastModified>2009-10-23T15:21:21+02:00</CategoryLastModified>
+      <CategoryImagePath></CategoryImagePath>
+      <CategoryPath>/</CategoryPath>
+      <CategoryLevel>0</CategoryLevel>
+      <CategoryChildCount>53</CategoryChildCount>
+      <CategoryWebPartChildCount>0</CategoryWebPartChildCount>
+    </cms_webpartcategory>
+    <cms_webpartcategory>
+      <CategoryID>167</CategoryID>
+      <CategoryDisplayName>Listings and viewers</CategoryDisplayName>
+      <CategoryParentID>249</CategoryParentID>
+      <CategoryName>ListingsAndViewers</CategoryName>
+      <CategoryGUID>25ea0b9d-7959-4566-b760-adddfbb8c159</CategoryGUID>
+      <CategoryLastModified>2008-04-09T07:43:51+02:00</CategoryLastModified>
+      <CategoryPath>/ListingsAndViewers</CategoryPath>
+      <CategoryLevel>1</CategoryLevel>
+      <CategoryChildCount>5</CategoryChildCount>
+      <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+    </cms_webpartcategory>
+    <cms_webpartcategory>
+      <CategoryID>341</CategoryID>
+      <CategoryDisplayName>Pages</CategoryDisplayName>
+      <CategoryParentID>167</CategoryParentID>
+      <CategoryName>DocumentViewers</CategoryName>
+      <CategoryGUID>46e23e43-a698-4fdb-8898-2526f4dd4e09</CategoryGUID>
+      <CategoryLastModified>2014-06-09T10:24:39.9047433+02:00</CategoryLastModified>
+      <CategoryPath>/ListingsAndViewers/DocumentViewers</CategoryPath>
+      <CategoryLevel>2</CategoryLevel>
+      <CategoryChildCount>0</CategoryChildCount>
+      <CategoryWebPartChildCount>17</CategoryWebPartChildCount>
+    </cms_webpartcategory>
+  </NewDataSet>
+</cms_webpart>

@@ -1,0 +1,1 @@
+Please read the related blogpost: http://devnet.kentico.com/articles/custom-response-repeater

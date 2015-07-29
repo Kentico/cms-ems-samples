@@ -1,0 +1,150 @@
+using System;
+using System.Data;
+using System.Runtime.Serialization;
+
+using CMS;
+using CMS.DataEngine;
+using CMS.Helpers;
+using ContentBlocks;
+
+[assembly: RegisterObjectType(typeof(ContentBlockInfo), ContentBlockInfo.OBJECT_TYPE)]
+    
+namespace ContentBlocks
+{
+    /// <summary>
+    /// ContentBlockInfo data container class.
+    /// </summary>
+	[Serializable]
+    public class ContentBlockInfo : AbstractInfo<ContentBlockInfo>
+    {
+        #region "Type information"
+
+        /// <summary>
+        /// Object type
+        /// </summary>
+        public const string OBJECT_TYPE = "contentblocks.contentblock";
+
+
+        /// <summary>
+        /// Type information.
+        /// </summary>
+#warning "You will need to configure the type info."
+        public static ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(ContentBlockInfoProvider), OBJECT_TYPE, "ContentBlocks.ContentBlock", "ContentBlockID", null, null, "ContentName", null, null, null, null, null)
+        {
+			ModuleName = "ContentBlocks",
+        };
+
+        #endregion
+
+
+        #region "Properties"
+
+        /// <summary>
+        /// Content block ID
+        /// </summary>
+        [DatabaseField]
+        public virtual int ContentBlockID
+        {
+            get
+            {
+                return ValidationHelper.GetInteger(GetValue("ContentBlockID"), 0);
+            }
+            set
+            {
+                SetValue("ContentBlockID", value);
+            }
+        }
+
+
+        /// <summary>
+        /// Content name
+        /// </summary>
+        [DatabaseField]
+        public virtual string ContentName
+        {
+            get
+            {
+                return ValidationHelper.GetString(GetValue("ContentName"), "");
+            }
+            set
+            {
+                SetValue("ContentName", value);
+            }
+        }
+
+
+        /// <summary>
+        /// Content block
+        /// </summary>
+        [DatabaseField]
+        public virtual string ContentBlock
+        {
+            get
+            {
+                return ValidationHelper.GetString(GetValue("ContentBlock"), "");
+            }
+            set
+            {
+                SetValue("ContentBlock", value);
+            }
+        }
+
+        #endregion
+
+
+        #region "Type based properties and methods"
+
+        /// <summary>
+        /// Deletes the object using appropriate provider.
+        /// </summary>
+        protected override void DeleteObject()
+        {
+            ContentBlockInfoProvider.DeleteContentBlockInfo(this);
+        }
+
+
+        /// <summary>
+        /// Updates the object using appropriate provider.
+        /// </summary>
+        protected override void SetObject()
+        {
+            ContentBlockInfoProvider.SetContentBlockInfo(this);
+        }
+
+        #endregion
+
+
+        #region "Constructors"
+
+		/// <summary>
+        /// Constructor for de-serialization.
+        /// </summary>
+        /// <param name="info">Serialization info</param>
+        /// <param name="context">Streaming context</param>
+        public ContentBlockInfo(SerializationInfo info, StreamingContext context)
+            : base(info, context, TYPEINFO)
+        {
+        }
+
+
+        /// <summary>
+        /// Constructor - Creates an empty ContentBlockInfo object.
+        /// </summary>
+        public ContentBlockInfo()
+            : base(TYPEINFO)
+        {
+        }
+
+
+        /// <summary>
+        /// Constructor - Creates a new ContentBlockInfo object from the given DataRow.
+        /// </summary>
+        /// <param name="dr">DataRow with the object data</param>
+        public ContentBlockInfo(DataRow dr)
+            : base(TYPEINFO, dr)
+        {
+        }
+
+        #endregion
+    }
+}

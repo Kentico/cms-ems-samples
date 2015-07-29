@@ -1,0 +1,59 @@
+using System;
+
+using CMS.Helpers;
+using CMS.MacroEngine;
+using CMS.Base;
+
+/// <summary>
+/// ContentBlock macro methods registration.
+/// </summary>
+public class ContentBlockMacroMethods : MacroMethodContainer
+{
+    #region "Macro methods implementation"
+
+    /// <summary>
+    /// Concatenates the given string with " default" string.
+    /// </summary>
+    /// <param name="param1">String to be concatenated with " default"</param>
+    public static string ContentBlock(string param1)
+    {
+        ContentBlocks.ContentBlockInfo cbi = ContentBlocks.ContentBlockInfoProvider.GetContentBlockInfo(param1);
+        if (cbi != null)
+        {
+            return cbi.ContentBlock;
+        }
+        return "<there is no content block with given name>";
+    }
+
+
+    // Add your own custom methods here
+
+    #endregion
+
+
+    #region "MacroResolver wrapper methods"
+
+    /// <summary>
+    /// Wrapper method of MyMethod suitable for MacroResolver.
+    /// </summary>
+    /// <param name="context">Evaluation context with child resolver</param>
+    /// <param name="parameters">Parameters of the method</param>
+    [MacroMethod(typeof(string), "Returns code block from code name.", 1)]
+    [MacroMethodParam(0, "param1", typeof(string), "Enter code block name.")]
+    public static object ContentBlock(EvaluationContext context, params object[] parameters)
+    {
+        switch (parameters.Length)
+        {
+            case 1:
+                // Overload with one parameter
+                return ContentBlock(ValidationHelper.GetString(parameters[0], ""));
+
+            default:
+                // No other overload is supported
+                throw new NotSupportedException();
+        }
+    }
+
+
+    #endregion
+}

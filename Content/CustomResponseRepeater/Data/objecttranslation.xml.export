@@ -1,0 +1,19 @@
+﻿<objecttranslation version="8.2">
+  <NewDataSet>
+    <objecttranslation>
+      <ClassName>cms_webpartcategory</ClassName>
+      <ID>342</ID>
+      <CodeName>BasicViewers</CodeName>
+    </objecttranslation>
+    <objecttranslation>
+      <ClassName>cms_webpartcategory</ClassName>
+      <ID>167</ID>
+      <CodeName>ListingsAndViewers</CodeName>
+    </objecttranslation>
+    <objecttranslation>
+      <ClassName>cms_webpartcategory</ClassName>
+      <ID>249</ID>
+      <CodeName>/</CodeName>
+    </objecttranslation>
+  </NewDataSet>
+</objecttranslation>

@@ -1,0 +1,1 @@
+Please read the related blogpost: https://devnet.kentico.com/articles/preventing-azure-cache-folders-from-bloating

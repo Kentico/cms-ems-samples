@@ -1,0 +1,63 @@
+﻿<cms_class version="8.0">
+  <NewDataSet>
+    <cms_class>
+      <ClassID>4130</ClassID>
+      <ClassDisplayName>Content block</ClassDisplayName>
+      <ClassName>ContentBlocks.ContentBlock</ClassName>
+      <ClassUsesVersioning>false</ClassUsesVersioning>
+      <ClassIsDocumentType>false</ClassIsDocumentType>
+      <ClassIsCoupledClass>true</ClassIsCoupledClass>
+      <ClassXmlSchema>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"&gt;
+  &lt;xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"&gt;
+    &lt;xs:complexType&gt;
+      &lt;xs:choice minOccurs="0" maxOccurs="unbounded"&gt;
+        &lt;xs:element name="ContentBlocks_ContentBlock"&gt;
+          &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+              &lt;xs:element name="ContentBlockID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" /&gt;
+              &lt;xs:element name="ContentName"&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="200" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+              &lt;/xs:element&gt;
+              &lt;xs:element name="ContentBlock"&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="2147483647" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+              &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/xs:element&gt;
+      &lt;/xs:choice&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:unique name="Constraint1" msdata:PrimaryKey="true"&gt;
+      &lt;xs:selector xpath=".//ContentBlocks_ContentBlock" /&gt;
+      &lt;xs:field xpath="ContentBlockID" /&gt;
+    &lt;/xs:unique&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;</ClassXmlSchema>
+      <ClassFormDefinition>&lt;form version="2"&gt;&lt;field column="ContentBlockID" columntype="integer" fieldtype="CustomUserControl" isPK="true" columnprecision="0" publicfield="false" guid="9648d185-c28e-48a1-aa89-d899aee73e88" reftype="Required"&gt;&lt;properties&gt;&lt;fieldcaption&gt;ContentBlockID&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;controlname&gt;labelcontrol&lt;/controlname&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="ContentName" visible="true" columntype="text" fieldtype="CustomUserControl" system="true" columnsize="200" publicfield="false" guid="17ab3f8d-0ec8-472f-b100-93b40ffbf628" isunique="true" reftype="Required"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Content name&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;Trim&gt;False&lt;/Trim&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;controlname&gt;textboxcontrol&lt;/controlname&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="ContentBlock" visible="true" columntype="longtext" fieldtype="CustomUserControl" system="true" publicfield="false" guid="835fc46b-4209-4f3d-b277-d2e2da4f9a94" reftype="Required"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Content block&lt;/fieldcaption&gt;&lt;/properties&gt;&lt;settings&gt;&lt;HeightUnitType&gt;PX&lt;/HeightUnitType&gt;&lt;WidthUnitType&gt;PX&lt;/WidthUnitType&gt;&lt;Dialogs_Content_Hide&gt;False&lt;/Dialogs_Content_Hide&gt;&lt;controlname&gt;htmlareacontrol&lt;/controlname&gt;&lt;ShowAddStampButton&gt;False&lt;/ShowAddStampButton&gt;&lt;MediaDialogConfiguration&gt;True&lt;/MediaDialogConfiguration&gt;&lt;Autoresize_Hashtable&gt;True&lt;/Autoresize_Hashtable&gt;&lt;/settings&gt;&lt;/field&gt;&lt;/form&gt;</ClassFormDefinition>
+      <ClassNodeNameSource></ClassNodeNameSource>
+      <ClassTableName>ContentBlocks_ContentBlock</ClassTableName>
+      <ClassShowAsSystemTable>false</ClassShowAsSystemTable>
+      <ClassUsePublishFromTo>false</ClassUsePublishFromTo>
+      <ClassShowTemplateSelection>false</ClassShowTemplateSelection>
+      <ClassSKUMappings></ClassSKUMappings>
+      <ClassIsMenuItemType>false</ClassIsMenuItemType>
+      <ClassLastModified>2014-06-09T13:42:16.8777565+02:00</ClassLastModified>
+      <ClassGUID>78c441a2-fe71-4064-bc0b-cd042ca779f0</ClassGUID>
+      <ClassCreateSKU>false</ClassCreateSKU>
+      <ClassIsProduct>false</ClassIsProduct>
+      <ClassIsCustomTable>false</ClassIsCustomTable>
+      <ClassVersionGUID>ce261d64-0005-4fd4-b247-6d99d289ae34</ClassVersionGUID>
+      <ClassResourceID>396</ClassResourceID>
+      <ClassCustomizedColumns></ClassCustomizedColumns>
+      <ClassCodeGenerationSettings>&lt;data&gt;&lt;displaynamecolumn&gt;&lt;/displaynamecolumn&gt;&lt;lastmodifiedcolumn&gt;&lt;/lastmodifiedcolumn&gt;&lt;guidcolumn&gt;&lt;/guidcolumn&gt;&lt;codenamecolumn&gt;ContentName&lt;/codenamecolumn&gt;&lt;namespace&gt;ContentBlocks&lt;/namespace&gt;&lt;siteidcolumn&gt;&lt;/siteidcolumn&gt;&lt;binarycolumn&gt;&lt;/binarycolumn&gt;&lt;useidhashtable&gt;False&lt;/useidhashtable&gt;&lt;useguidhashtable&gt;False&lt;/useguidhashtable&gt;&lt;usenamehashtable&gt;False&lt;/usenamehashtable&gt;&lt;objecttype&gt;contentblocks.contentblock&lt;/objecttype&gt;&lt;/data&gt;</ClassCodeGenerationSettings>
+    </cms_class>
+  </NewDataSet>
+</cms_class>

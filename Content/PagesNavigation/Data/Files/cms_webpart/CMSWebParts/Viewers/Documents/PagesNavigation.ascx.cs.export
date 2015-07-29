@@ -1,0 +1,271 @@
+using System;
+using System.Data;
+using System.Collections;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+using CMS.PortalControls;
+using CMS.Helpers;
+using CMS.DocumentEngine;
+using CMS.Controls;
+using CMS.SiteProvider;
+using System.Text;
+using CMS.IO;
+using CMS.PortalEngine;
+
+public partial class CMSWebParts_Viewers_Documents_PagesNavigation : CMSAbstractWebPart
+{
+    #region "Properties"
+
+    public string PageType
+    {
+        get
+        {
+            return DataHelper.GetNotEmpty(ValidationHelper.GetString(GetValue("PageType"), "CMS.MenuItem"), "CMS.MenuItem");
+        }
+        set
+        {
+            SetValue("PageType", value);
+        }
+    }
+
+    public string Path
+    {
+        get
+        {
+            return DataHelper.GetNotEmpty(ValidationHelper.GetString(GetValue("Path"), "/%"), "/%");
+        }
+        set
+        {
+            SetValue("Path", value);
+        }
+    }
+
+    public int NestingLevel
+    {
+        get
+        {
+            return ValidationHelper.GetInteger(GetValue("NestingLevel"), -1);
+        }
+        set
+        {
+            SetValue("NestingLevel", value);
+        }
+    }
+
+    public int TopN
+    {
+        get
+        {
+            return ValidationHelper.GetInteger(GetValue("TopN"), 0);
+        }
+        set
+        {
+            SetValue("TopN", value);
+        }
+    }
+
+    public string Where
+    {
+        get
+        {
+            return ValidationHelper.GetString(GetValue("Where"), "");
+        }
+        set
+        {
+            SetValue("Where", value);
+        }
+    }
+
+    public string OrderBy
+    {
+        get
+        {
+            return ValidationHelper.GetString(GetValue("OrderBy"), "");
+        }
+        set
+        {
+            SetValue("OrderBy", value);
+        }
+    }
+
+    public string PreviousLinkCode
+    {
+        get
+        {
+            return ValidationHelper.GetString(GetValue("PreviousLinkCode"), "Previous");
+        }
+        set
+        {
+            SetValue("PreviousLinkCode", value);
+        }
+    }
+
+    public string NextLinkCode
+    {
+        get
+        {
+            return ValidationHelper.GetString(GetValue("NextLinkCode"), "Next");
+        }
+        set
+        {
+            SetValue("NextLinkCode", value);
+        }
+    }
+
+    public bool ShowNames
+    {
+        get
+        {
+            return ValidationHelper.GetBoolean(GetValue("ShowNames"), false);
+        }
+        set
+        {
+            SetValue("ShowNames", value);
+        }
+    }
+
+    public string RenderLinks
+    {
+        get
+        {
+            return ValidationHelper.GetString(GetValue("RenderLinks"), "both");
+        }
+        set
+        {
+            SetValue("RenderLinks", value);
+        }
+    }
+
+    public string PreviousLinkCSS
+    {
+        get
+        {
+            return ValidationHelper.GetString(GetValue("PreviousLinkCSS"), "");
+        }
+        set
+        {
+            SetValue("PreviousLinkCSS", value);
+        }
+    }
+
+    public string NextLinkCSS
+    {
+        get
+        {
+            return ValidationHelper.GetString(GetValue("NextLinkCSS"), "");
+        }
+        set
+        {
+            SetValue("NextLinkCSS", value);
+        }
+    }
+
+    #endregion
+
+
+    #region "Methods"
+
+    /// <summary>
+    /// Content loaded event handler.
+    /// </summary>
+    public override void OnContentLoaded()
+    {
+        base.OnContentLoaded();
+        SetupControl();
+    }
+
+
+    /// <summary>
+    /// Initializes the control properties.
+    /// </summary>
+    protected void SetupControl()
+    {
+        if (this.StopProcessing)
+        {
+            // Do not process
+        }
+        else
+        {
+            DataSet ds = new DataSet();
+            ds = DocumentHelper.GetDocuments()
+                                  .TopN(TopN)
+                                  .Type(PageType)
+                                  .Path(Path)
+                                  .NestingLevel(NestingLevel)
+                                  .Columns("DocumentID,DocumentName,NodeAliasPath")
+                                  .OnSite(SiteContext.CurrentSiteName)
+                                  .Where(Where)
+                                  .OrderBy(OrderBy);
+
+            DataRow previousDR = ds.Tables[0].Rows[0];
+            int i = 0;
+            int n = ds.Tables[0].Rows.Count;
+            bool g = false;
+
+            if (n > 0) {
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    if (dr != null)
+                    {
+                        if (i > 0 && ValidationHelper.GetInteger(dr["DocumentID"], 0) == DocumentContext.CurrentDocument.DocumentID && RenderLinks != "next")
+                        {
+                            previous.Text = "<div class='" + PreviousLinkCSS + "'><a href='~" + previousDR["NodeAliasPath"].ToString() + ".aspx' alt='" + previousDR["DocumentName"].ToString() + "'>" + generateName(previousDR["DocumentName"].ToString(), true) + "</a></div>";
+                        }
+
+                        if (g && RenderLinks != "prev")
+                        {
+                            next.Text = "<div class='" + NextLinkCSS + "'><a href='~" + dr["NodeAliasPath"].ToString() + ".aspx' alt='" + dr["DocumentName"].ToString() + "'>" + generateName(dr["DocumentName"].ToString(), false) + "</a></div>";
+                            g = false;
+                        }
+
+                        previousDR = dr;
+
+                        if (ValidationHelper.GetInteger(dr["DocumentID"], 0) == DocumentContext.CurrentDocument.DocumentID)
+                        {
+                            g = true;
+                        }
+
+                        i++;
+                    }
+                }
+            }
+        }
+    }
+
+    private string generateName(string name, bool prev)
+    {
+        if (ShowNames)
+        {
+            return name;
+        }
+        else
+        {
+            if (prev)
+            {
+                return PreviousLinkCode;
+            }
+            else
+            {
+                return NextLinkCode;
+            }
+        }
+    }
+
+
+    /// <summary>
+    /// Reloads the control data.
+    /// </summary>
+    public override void ReloadData()
+    {
+        base.ReloadData();
+
+        SetupControl();
+    }
+
+    #endregion
+}
+
+
+

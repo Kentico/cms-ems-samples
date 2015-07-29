@@ -1,0 +1,1 @@
+Please read the related blogpost: http://devnet.kentico.com/articles/integrating-azure-search-with-kentico

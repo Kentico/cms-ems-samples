@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="AttendeeID">
+    <action name="edit" caption="$General.Edit$" fonticonclass="icon-edit" fonticonstyle="allow" onclick="EditAttendee({0}); return false;" />
+    <action name="delete" caption="$General.Delete$" fonticonclass="icon-bin" fonticonstyle="critical" confirmation="$General.ConfirmDelete$" />
+    <action name="sendemail" caption="$Unigrid.Events.Actions.SendEmail$" fonticonclass="icon-message" />
+  </actions>
+  <columns>
+    <column source="AttendeeFirstName" caption="$unigrid.events.columns.attendeefirstname$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="AttendeeLastName" caption="$unigrid.events.columns.attendeelastname$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="AttendeeEmail" caption="$general.email$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="AttendeePhone" caption="$unigrid.events.columns.attendeephone$" wrap="false">
+      <filter type="text" />
+    </column>
+    <!-- START Events as products -->
+    <column caption="Order ID" wrap="false" source="AttendeeOrderId" externalsourcename="orderid"> </column>
+    <column caption="Paid" wrap="false" source="AttendeePaymentCompleted" externalsourcename="#yesno"> </column>
+    <!-- START Events as products -->
+    <column width="100%" />
+  </columns>
+  <!-- START Events as products -->
+  <objecttype name="cms.eventattendee" columns="AttendeeID, AttendeeFirstName, AttendeeLastName, AttendeeEmail, AttendeePhone, AttendeeOrderID, AttendeePaymentCompleted" />
+  <!-- <objecttype name="cms.eventattendee" columns="AttendeeID, AttendeeFirstName, AttendeeLastName, AttendeeEmail, AttendeePhone" /> -->
+  <!-- END Events as products -->
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>
