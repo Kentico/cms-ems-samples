@@ -1,1 +1,0 @@
-Please read the related blogpost: http://devnet.kentico.com/articles/automatic-deletion-of-inactive-wf-servers

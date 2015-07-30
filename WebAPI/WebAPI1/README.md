@@ -1,4 +1,11 @@
-Please read the related blogpost: http://devnet.kentico.com/articles/using-asp-net-web-api-in-kentico-8-1
+Using WebAPI1 in Kentico
+========================
+
+[Related blog post](http://devnet.kentico.com/articles/using-asp-net-web-api-in-kentico-8-1)
+
+[Download samples as a ZIP file](https://github.com/Kentico/Samples/archive/master.zip)
+
+[Other options](https://github.com/Kentico/Samples)
 
 Kentico 8.1 Web API Sample project (using the same Web API version as Kentico)
 

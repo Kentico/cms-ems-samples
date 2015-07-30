@@ -1,1 +1,0 @@
-Please read the related blogpost: https://devnet.kentico.com/articles/content-blocks
