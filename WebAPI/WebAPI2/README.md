@@ -25,6 +25,6 @@ Kentico 8.1 Web API Sample project (using Web API 2.0)
 
 6. Delete all dlls from `Lib/MVC` folder.
 
-7. Remove CMSApp_MVC project from the solution or update it to MVC 5 in case you use it for MVC - please see documentation [how to update MVC](https://docs.kentico.com/display/K81/Upgrading+the+MVC+version)
+7. Remove `CMSApp_MVC` project from the solution or update it to MVC 5 in case you use it for MVC - please see documentation [how to update MVC](https://docs.kentico.com/display/K81/Upgrading+the+MVC+version)
 
 8. Rebuild the solution.
