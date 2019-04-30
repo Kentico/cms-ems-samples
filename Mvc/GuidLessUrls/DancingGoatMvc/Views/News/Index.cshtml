@@ -1,0 +1,14 @@
+﻿@model IEnumerable<DancingGoat.Models.News.NewsViewModel>
+@{
+    ViewBag.Title = "News";
+}
+@foreach (var news in Model)
+{
+    <article class="article-detail col-lg-9 col-md-12 article-detail-related-box">
+        <div class="article-detail-datetime">
+            @news.PublicationDate.ToString("D")
+        </div>
+        <h3><a href="@Url.Action("Detail", new { urlSlug = news.UrlSlug })">@news.Title</a></h3>
+    </article>
+
+}

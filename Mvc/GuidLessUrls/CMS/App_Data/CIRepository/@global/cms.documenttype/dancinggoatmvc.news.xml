@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.documenttype>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>DancingGoatMvc</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>News</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="NewsID" columntype="integer" guid="eb4a3919-3cc6-43b2-ac2f-c5ac55f37afb" isPK="true" publicfield="false">
+        <properties>
+          <fieldcaption>NewsID</fieldcaption>
+        </properties>
+        <settings>
+          <controlname>labelcontrol</controlname>
+        </settings>
+      </field>
+      <field column="Title" columnsize="200" columntype="text" guid="a7a18174-f87e-4ca4-9ed6-c82f03bbd4bc" publicfield="false" visible="true">
+        <properties>
+          <fieldcaption>Title</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="NewsText" columntype="longtext" guid="29f23692-0868-4bfc-b891-7a5e66f9c467" publicfield="false" visible="true">
+        <properties>
+          <fieldcaption>News Text</fieldcaption>
+        </properties>
+        <settings>
+          <controlname>HtmlAreaControl</controlname>
+          <Dialogs_Content_Hide>False</Dialogs_Content_Hide>
+          <HeightUnitType>PX</HeightUnitType>
+          <MediaDialogConfiguration>True</MediaDialogConfiguration>
+          <ShowAddStampButton>False</ShowAddStampButton>
+          <WidthUnitType>PX</WidthUnitType>
+        </settings>
+      </field>
+      <field column="UrlSlug" columnsize="200" columntype="text" guid="29502a20-e8c2-4cba-91ca-a7d70ee2726c" isinherited="true" publicfield="false" visible="true">
+        <properties>
+          <fieldcaption>URL slug</fieldcaption>
+          <validationerrormessage>
+            <![CDATA[Either the URL pattern was not set, or the resolved URL already returns content.]]>
+          </validationerrormessage>
+        </properties>
+        <settings>
+          <controlname>UniqueUrlEditorControl</controlname>
+          <PageGuidHeaderName>DancingGoat-PageGuid</PageGuidHeaderName>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>952e1b97-b3a5-4cc0-92a6-7dc3058fea69</ClassGUID>
+  <ClassIconClass>icon-doc-o</ClassIconClass>
+  <ClassInheritsFromClassID>
+    <CodeName>DancingGoatMvc.RepetitivePage</CodeName>
+    <GUID>f16099d7-2b6e-4a29-80c4-39f16e444c7e</GUID>
+    <ObjectType>cms.documenttype</ObjectType>
+  </ClassInheritsFromClassID>
+  <ClassIsContentOnly>True</ClassIsContentOnly>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>True</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsMenuItemType>False</ClassIsMenuItemType>
+  <ClassName>DancingGoatMvc.News</ClassName>
+  <ClassNodeNameSource />
+  <ClassSearchContentColumn>DocumentContent</ClassSearchContentColumn>
+  <ClassSearchCreationDateColumn>DocumentCreatedWhen</ClassSearchCreationDateColumn>
+  <ClassSearchEnabled>True</ClassSearchEnabled>
+  <ClassSearchSettings>
+    <search>
+      <item azurecontent="True" azureretrievable="False" azuresearchable="True" content="True" id="9f581c85-a288-4afb-ba6e-00ba767da2d0" name="NewsText" searchable="False" tokenized="True" />
+      <item azurecontent="True" azureretrievable="False" azuresearchable="True" content="True" id="d481f1bd-3c96-479b-a5f6-277ee7fb3be8" name="UrlSlug" searchable="False" tokenized="True" />
+      <item azurecontent="False" azureretrievable="True" azuresearchable="False" content="False" id="f66dbf17-f899-49a9-ac49-d110fbe07af5" name="NewsID" searchable="True" tokenized="False" />
+    </search>
+  </ClassSearchSettings>
+  <ClassSearchTitleColumn>DocumentName</ClassSearchTitleColumn>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassTableName>DancingGoatMvc_News</ClassTableName>
+  <ClassURLPattern>/{% DocumentCulture %}/News/{% UrlSlug %}</ClassURLPattern>
+  <ClassUsePublishFromTo>True</ClassUsePublishFromTo>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.documenttype>
