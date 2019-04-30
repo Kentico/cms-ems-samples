@@ -337,9 +337,9 @@ CMS/App_Data/CIRepository/@global/cms.documenttype/*
 !CMS/App_Data/CIRepository/@global/cms.documenttype/dancinggoatmvc.news.xml
 !CMS/App_Data/CIRepository/@global/cms.documenttype/dancinggoatmvc.newssection.xml
 !CMS/App_Data/CIRepository/@global/cms.documenttype/dancinggoatmvc.repetitivepage.xml
-!CMS/App_Data/CIRepository/@global/cms.documenttype/cms.formusercontrol
-CMS/App_Data/CIRepository/@global/cms.documenttype/cms.formusercontrol/*
-!CMS/App_Data/CIRepository/@global/cms.documenttype/cms.formusercontrol/uniqueurleditorcontrol.xml
+!CMS/App_Data/CIRepository/@global/cms.formusercontrol
+CMS/App_Data/CIRepository/@global/cms.formusercontrol/*
+!CMS/App_Data/CIRepository/@global/cms.formusercontrol/uniqueurleditorcontrol.xml
 DancingGoatMvc/*
 !DancingGoatMvc/App_Start
 DancingGoatMvc/App_Start/*
