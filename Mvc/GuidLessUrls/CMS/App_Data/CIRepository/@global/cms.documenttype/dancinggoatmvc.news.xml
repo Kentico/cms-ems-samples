@@ -57,7 +57,7 @@
     </form>
   </ClassFormDefinition>
   <ClassGUID>952e1b97-b3a5-4cc0-92a6-7dc3058fea69</ClassGUID>
-  <ClassIconClass>icon-doc-o</ClassIconClass>
+  <ClassIconClass>icon-lines-rectangle-o</ClassIconClass>
   <ClassInheritsFromClassID>
     <CodeName>DancingGoatMvc.RepetitivePage</CodeName>
     <GUID>f16099d7-2b6e-4a29-80c4-39f16e444c7e</GUID>

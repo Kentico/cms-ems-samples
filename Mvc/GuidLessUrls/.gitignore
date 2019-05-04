@@ -349,6 +349,11 @@ DancingGoatMvc/Controllers/*
 !DancingGoatMvc/Controllers/NewsController.cs
 !DancingGoatMvc/Controllers/RepetitivePageController.cs
 !DancingGoatMvc/Filters
+!DancingGoatMvc/Helpers
+DancingGoatMvc/Helpers/*
+!DancingGoatMvc/Helpers/Extensions
+DancingGoatMvc/Helpers/Extensions/*
+!DancingGoatMvc/Helpers/Extensions/UrlHelperExtensions.cs
 !DancingGoatMvc/Models
 DancingGoatMvc/Models/*
 !DancingGoatMvc/Models/Generated

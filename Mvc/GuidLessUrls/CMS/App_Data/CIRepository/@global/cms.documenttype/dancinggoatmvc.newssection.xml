@@ -32,7 +32,7 @@
     </form>
   </ClassFormDefinition>
   <ClassGUID>71c5bf91-02eb-4e3b-bbf5-7fdb274e1e8a</ClassGUID>
-  <ClassIconClass>icon-doc-o</ClassIconClass>
+  <ClassIconClass>icon-newspaper</ClassIconClass>
   <ClassIsContentOnly>True</ClassIsContentOnly>
   <ClassIsCoupledClass>True</ClassIsCoupledClass>
   <ClassIsCustomTable>False</ClassIsCustomTable>
