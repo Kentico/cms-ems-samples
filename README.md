@@ -8,4 +8,3 @@ Wanna improve the samples? Great! Read the [contributing guidelines](https://git
 
 If anything feels wrong or incomplete, please let us know by creating a new [issue](https://github.com/Kentico/Samples/issues/new).
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/cms-ems-samples?pixel)
